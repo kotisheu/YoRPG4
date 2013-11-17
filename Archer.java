@@ -1,20 +1,20 @@
 public class Archer extends Character {
 
   public Archer() {
-    name = "robinHood";
-    HP = 85;
-    MP = 75;
-    strength = 80;
-    defense = 40;
-    attack = .55;
-    speed = 90;
-    smarts = 60;
-    accuracy = .95;
+    _name = "robinHood";
+    _HP = 85;
+    _MP = 75;
+    _strength = 80;
+    _defense = 40;
+    _attack = .55;
+    _speed = 90;
+    _smarts = 60;
+    _accuracy = .95;
   }
   
   public Archer(String s) {
     this();
-    name = s;
+    _name = s;
   }
 
 }
