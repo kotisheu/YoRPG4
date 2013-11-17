@@ -16,5 +16,10 @@ public class Rogue extends Character {
     this();
     _name = s;
   }
+  
+  public void levelUp() {
+    _hp += 20;
+    _mp += 20;
+  }
 
 }
