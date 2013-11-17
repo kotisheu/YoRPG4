@@ -23,6 +23,7 @@ public class Cleric extends Character {
 	defense = 10;
 	attack = 0.15;
 	HP = 75;
+	MP -= 25;
     }
 
 }
