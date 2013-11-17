@@ -1,30 +1,33 @@
 public abstract class Character{
+
 // Attributes:
-    protected int hp; 
-    protected int mp; 
-    protected int strength;
-    protected int defense;
-    protected double attack;
-    protected int speed;
-    protected int smarts;
-    protected double accuracy;
+    protected int _hp; 
+    protected int _mp; 
+    protected int _strength;
+    protected int _defense;
+    protected double _attack;
+    protected int _speed;
+    protected int _smarts;
+    protected double _accuracy;
+
 // Methods:
- public boolean isAlive(){
-	return hp > 0;
+		public boolean isAlive(){
+			return _hp > 0;
     }
     public int getDefense(){
-	return defense;
+			return _defense;
     }
     public int lowerHP(int i){
-	hp-=i;
-	return hp;
+			_hp-=i;
+			return _hp;
     }
+    
     public int attack(Character _character){
-          int damage = (int) ( (strength * attack) - _character.getDefense() );
-          if (damage < 0)
-          	damage = 0;
-          _character.lowerHP(damage);
-	  return damage;
+			int damage = (int) ( (_strength * _attack) - _character.getDefense() );
+      if (damage < 0)
+      	damage = 0;
+        _character.lowerHP(damage);
+	  	return damage;
     }
     ~dodge
     ~expup
@@ -33,7 +36,7 @@ public abstract class Character{
     public abstract void normalize();
     public abstract void specialize();->skill?
     public abstract String about();
-	> Shouldn't about be sbstract/for each class
+	> Shouldn't about be abstract/for each class
     public static String about() {
 	String desc = "";
         desc += "Warrior: A fine soul that hath a sword to parry and slash with.";
