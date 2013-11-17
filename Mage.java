@@ -16,5 +16,10 @@ public class Mage extends Character {
     this();
     _name = s;
   }
+  
+  public void levelUp() {
+    _hp += 17;
+    _mp += 40;
+  }
 
 }
