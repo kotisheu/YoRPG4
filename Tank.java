@@ -18,5 +18,10 @@ public class Tank extends Character {
     this();
     _name = s;
   }
+  
+  public void levelUp() {
+    _hp += 40;
+    _mp += 5;
+  }
 
 }
