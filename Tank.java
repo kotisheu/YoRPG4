@@ -3,20 +3,20 @@
 public class Tank extends Character {
 
   public Tank() {
-    name = "megatron";
-    HP = 200;
-    MP = 50;
-    strength = 70;
-    defense = 100;
-    attack = .25;
-    speed = 30;
-    smarts = 20;
-    accuracy = .65;
+    _name = "megatron";
+    _hp = 200;
+    _mp = 50;
+    _strength = 70;
+    _defense = 100;
+    _attack = .25;
+    _speed = 30;
+    _smarts = 20;
+    _accuracy = .65;
   }
   
   public Tank(String s) {
     this();
-    name = s;
+    _name = s;
   }
 
 }
