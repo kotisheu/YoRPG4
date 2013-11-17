@@ -4,7 +4,7 @@ public class Cleric extends Character {
     public Cleric() {
 			_name = "holyPerson";
 			_hp = 75;
-			_MP = 175;
+			_mp = 175;
 			_strength = 20;
 			_defense = 20;
 			_attack = 0.2;
@@ -16,6 +16,11 @@ public class Cleric extends Character {
     public Cleric(String s) {
 			this();
 			_name = s;
+    }
+    
+    public void levelUp() {
+    	_hp += 15;
+    	_mp += 35;
     }
 
     public void heal() {
