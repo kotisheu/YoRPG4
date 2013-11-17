@@ -5,12 +5,12 @@ public abstract class Character{
     protected int strength;
     protected int defense;
     protected double attack;
-    ~speed;
-    ~smarts
-    ~accuracy
+    protected int speed;
+    protected int smarts;
+    protected double accuracy;
 // Methods:
  public boolean isAlive(){
-	return hp>0;
+	return hp > 0;
     }
     public int getDefense(){
 	return defense;
@@ -19,9 +19,12 @@ public abstract class Character{
 	hp-=i;
 	return hp;
     }
-    public int attack(Character c ){
-          double damage = (strength * attack) - c.getDefense();
-	  return (int)damage;
+    public int attack(Character _character){
+          int damage = (int) ( (strength * attack) - _character.getDefense() );
+          if (damage < 0)
+          	damage = 0;
+          _character.lowerHP(damage);
+	  return damage;
     }
     ~dodge
     ~expup
@@ -35,7 +38,7 @@ public abstract class Character{
 	String desc = "";
         desc += "Warrior: A fine soul that hath a sword to parry and slash with.";
 	desc += "/nMonster: An evil being drawn up from the Underworld, lurking in shadows and scaring the fair maids.";
-	desc += "n/Rogue: A theif that swipes items from good, innocent victims to battle cleverly against the cruelty of reality.";
+	desc += "n/Rogue: A thief that swipes items from good, innocent victims to battle cleverly against the cruelty of reality.";
 	desc += "n/Mage: A skilled magician that casts spells learned from the great world of Dumbledore.";
 	return desc;
     }
