@@ -1,4 +1,4 @@
-//Let the healing begin.
+//Let the healing begin..
 public class Cleric extends Character {
 
     public Cleric() {
