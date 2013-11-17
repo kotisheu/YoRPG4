@@ -1,8 +1,8 @@
-public class Monster extends Character {
+public class Monster1 extends Character {
 
     private String name;
 
-    public Monster() {
+    public Monster1() {
 	    health = 150;
 	    defense = 20;
 	    attackRating = 1;
