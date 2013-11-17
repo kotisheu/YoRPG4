@@ -5,7 +5,7 @@ public abstract class Character{
     protected int strength;
     protected int defense;
     protected double attack;
-    ~speed
+    ~speed;
     ~smarts
     ~accuracy
 // Methods:
