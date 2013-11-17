@@ -38,12 +38,12 @@ public abstract class Character{
     public abstract String about();
 	> Shouldn't about be abstract/for each class
     public static String about() {
-	String desc = "";
+		String desc = "";
         desc += "Warrior: A fine soul that hath a sword to parry and slash with.";
-	desc += "/nMonster: An evil being drawn up from the Underworld, lurking in shadows and scaring the fair maids.";
-	desc += "n/Rogue: A thief that swipes items from good, innocent victims to battle cleverly against the cruelty of reality.";
-	desc += "n/Mage: A skilled magician that casts spells learned from the great world of Dumbledore.";
-	return desc;
+				desc += "/nMonster: An evil being drawn up from the Underworld, lurking in shadows and scaring the fair maids.";
+				desc += "n/Rogue: A thief that swipes items from good, innocent victims to battle cleverly against the cruelty of reality.";
+				desc += "n/Mage: A skilled magician that casts spells learned from the great world of Dumbledore.";
+				return desc;
     }
 
 }
