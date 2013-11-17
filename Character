@@ -1,0 +1,65 @@
+public class Character {
+
+    //Instance Vars
+    protected String name;
+    protected int HP;
+    protected int strength;
+    protected int defense;
+    protected double attack;
+
+    //Default Constructor
+    public Character() {
+	name = "undefined";
+	HP = 125;
+	strength = 100;
+	defense = 50;
+	attack = 0.5;
+    }
+
+    //Accessor Methods
+    public boolean isAlive() {
+	return HP > 0;
+    }
+
+    public String getName() {
+	return name;
+    }
+
+    public int getDefense() {
+	return defense;
+    }
+
+    //Mutator Methods
+
+    public int attack(Character x) {
+	int pow = (int) ( ( strength * attack ) - x.getDefense() );
+	if ( pow < 0 )
+	    pow = 0;
+	x.lowerHP(pow);
+	return pow;
+    }
+
+    public void lowerHP(int pow) {
+	HP -= pow;
+    }
+
+    public void normalize() {
+	attack = .5;
+	defense = 50;
+    }
+
+    public void specialize() {
+	attack = .75;
+	defense = 25;
+    }
+
+    public static String about() {
+	String desc = "";
+        desc += "Warrior: A fine soul that hath a sword to parry and slash with.";
+	desc += "/nMonster: An evil being drawn up from the Underworld, lurking in shadows and scaring the fair maids.";
+	desc += "n/Rogue: A theif that swipes items from good, innocent victims to battle cleverly against the cruelty of reality.";
+	desc += "n/Mage: A skilled magician that casts spells learned from the great world of Dumbledore.";
+	return desc;
+    }
+
+}
