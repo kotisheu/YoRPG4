@@ -1,13 +1,15 @@
 public abstract class Character{
+	
 // Attributes:
     protected int hp; 
     protected int mp; 
     protected int strength;
     protected int defense;
     protected double attack;
-    ~speed
-    ~smarts
-    ~accuracy
+    protected int speed;
+    protected int smarts;
+    protected double accuracy;
+    
 // Methods:
  public boolean isAlive(){
 	return hp>0;
