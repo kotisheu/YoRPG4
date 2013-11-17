@@ -1,4 +1,3 @@
-
 public abstract class Character{
 // Attributes:
     protected int hp; 
