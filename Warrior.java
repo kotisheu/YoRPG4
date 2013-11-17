@@ -16,5 +16,10 @@ public class Warrior extends Character{
 	this();
 	_name = s;
     }
+
+public void levelUp() {
+    _hp += 50;
+    _mp += 5;
+  }
  
 }
