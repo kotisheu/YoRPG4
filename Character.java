@@ -9,7 +9,7 @@ public abstract class Character{
     ~smarts
     ~accuracy
 // Methods:
- public boolean isAlive(){
+public boolean isAlive(){
 	return hp>0;
     }
     public int getDefense(){
@@ -19,9 +19,12 @@ public abstract class Character{
 	hp-=i;
 	return hp;
     }
-    public int attack(Character c ){
-          double damage = (strength * attack) - c.getDefense();
-	  return (int)damage;
+    public int attack(Character _character ){
+	int damage = (int) ( (strength * attack) - _character.getDefense() );
+	if (damage < 0)
+		damage = 0;
+	_character.lowerHP(damage);
+	return damage;
     }
     ~dodge
     ~expup
