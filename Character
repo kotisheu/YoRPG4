@@ -1,58 +1,37 @@
-public class Character {
 
-    //Instance Vars
-    protected String name;
-    protected int HP;
+public abstract class Character{
+// Attributes:
+    protected int hp; 
+    protected int mp; 
     protected int strength;
     protected int defense;
     protected double attack;
-
-    //Default Constructor
-    public Character() {
-	name = "undefined";
-	HP = 125;
-	strength = 100;
-	defense = 50;
-	attack = 0.5;
+    ~speed
+    ~smarts
+    ~accuracy
+// Methods:
+ public boolean isAlive(){
+	return hp>0;
     }
-
-    //Accessor Methods
-    public boolean isAlive() {
-	return HP > 0;
-    }
-
-    public String getName() {
-	return name;
-    }
-
-    public int getDefense() {
+    public int getDefense(){
 	return defense;
     }
-
-    //Mutator Methods
-
-    public int attack(Character x) {
-	int pow = (int) ( ( strength * attack ) - x.getDefense() );
-	if ( pow < 0 )
-	    pow = 0;
-	x.lowerHP(pow);
-	return pow;
+    public int lowerHP(int i){
+	hp-=i;
+	return hp;
     }
-
-    public void lowerHP(int pow) {
-	HP -= pow;
+    public int attack(Character c ){
+          double damage = (strength * attack) - c.getDefense();
+	  return (int)damage;
     }
-
-    public void normalize() {
-	attack = .5;
-	defense = 50;
-    }
-
-    public void specialize() {
-	attack = .75;
-	defense = 25;
-    }
-
+    ~dodge
+    ~expup
+    ~abstract levelup
+    public abstract String getName();
+    public abstract void normalize();
+    public abstract void specialize();->skill?
+    public abstract String about();
+	> Shouldn't about be sbstract/for each class
     public static String about() {
 	String desc = "";
         desc += "Warrior: A fine soul that hath a sword to parry and slash with.";
