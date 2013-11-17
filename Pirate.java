@@ -16,5 +16,10 @@ public class Pirate extends Character {
     this();
     _name = s;
   }
+  
+  public void levelUp() {
+    _hp += 25;
+    _mp += 10;
+  }
 
 }
