@@ -12,7 +12,7 @@ public class Mage extends Character {
     accuracy = .75;
   }
   
-  public Rogue(String s) {
+  public Mage(String s) {
     this();
     name = s;
   }
