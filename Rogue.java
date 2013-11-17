@@ -1,20 +1,20 @@
 public class Rogue extends Character {
 
   public Rogue() {
-    name = "ninjaBob";
-    HP = 100;
-    MP = 100;
-    strength = 70;
-    defense = 50;
-    attack = .35;
-    speed = 90;
-    smarts = 40;
-    accuracy = .85;
+    _name = "ninjaBob";
+    _hp = 100;
+    _mp = 100;
+    _strength = 70;
+    _defense = 50;
+    _attack = .35;
+    _speed = 90;
+    _smarts = 40;
+    _accuracy = .85;
   }
   
   public Rogue(String s) {
     this();
-    name = s;
+    _name = s;
   }
 
 }
