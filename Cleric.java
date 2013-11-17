@@ -2,28 +2,28 @@
 public class Cleric extends Character {
 
     public Cleric() {
-	name = "holyPerson";
-	HP = 75;
-	MP = 175;
-	strength = 20;
-	defense = 20;
-	attack = 0.2;
-	speed = 40;
-	smarts = 100;
-	accuracy = .8;
+			_name = "holyPerson";
+			_hp = 75;
+			_MP = 175;
+			_strength = 20;
+			_defense = 20;
+			_attack = 0.2;
+			_speed = 40;
+			_smarts = 100;
+			_accuracy = .8;
     }
 
     public Cleric(String s) {
-	this();
-	name = s;
+			this();
+			_name = s;
     }
 
     public void heal() {
-	strength = 10;
-	defense = 10;
-	attack = 0.15;
-	HP = 75;
-	MP -= 25;
+			_strength = 10;
+			_defense = 10;
+			_attack = 0.15;
+			_hp = 75;
+			_mp -= 25;
     }
 
 }
