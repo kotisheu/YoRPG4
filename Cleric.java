@@ -10,7 +10,7 @@ public class Cleric extends Character {
 	attack = 0.2;
 	speed = 40;
 	smarts = 100;
-	accuracry = .8;
+	accuracy = .8;
     }
 
     public Cleric(String s) {
