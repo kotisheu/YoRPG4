@@ -1,12 +1,12 @@
 public class Monster extends Character {
 
-    private String name;
+    private String _name;
 
     public Monster2() {
-	    health = 250;
-	    defense = 15;
-	    attackRating = 1.5;
-	    strength = (int) (15 + (40 * Math.random()));
+	    _hp = 250;
+	    _defense = 15;
+	    _attack = 1.5;
+	    _strength = (int) (15 + (40 * Math.random()));
     }
 
     public void specialize () {
