@@ -2,8 +2,8 @@ public class Archer extends Character {
 
   public Archer() {
     _name = "robinHood";
-    _HP = 85;
-    _MP = 75;
+    _hp = 85;
+    _mp = 75;
     _strength = 80;
     _defense = 40;
     _attack = .55;
@@ -16,5 +16,10 @@ public class Archer extends Character {
     this();
     _name = s;
   }
-
+  
+  public void levelUp() {
+    _hp += 17;
+    _mp += 15;
+  }
+  
 }
