@@ -1,7 +1,7 @@
 public class Rogue extends Character {
 
   public Rogue() {
-    name = ninjaBob;
+    name = "ninjaBob";
     HP = 100;
     MP = 100;
     strength = 70;
