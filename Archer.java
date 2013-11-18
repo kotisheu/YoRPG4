@@ -40,7 +40,7 @@ public class Archer extends Character {
     _defense = 40;
   }
   
-  public string about() {
+  public String about() {
     String desc = "A lighthearted lad with 20/20 vision who can impale foes from faraway distances with his bow and arrows.";
     return desc;
   }
