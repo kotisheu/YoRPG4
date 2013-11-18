@@ -18,7 +18,7 @@ public abstract class Character{
     public int getExp(){
     	return _exp;
     }
-    public
+    
     public int attack(Character c){
     	if (hit()) {
 		int damage = (int) ( (_strength * _attack) - c.getDefense() );
