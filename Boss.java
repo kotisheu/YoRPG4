@@ -9,7 +9,7 @@ public class Boss extends Character {
 	    _attack = .95;
 	    _strength = (int) (_level + (65 * Math.random()));
 	    _speed= 50;
-	    _level = c.getLevel+(int)(Math.random()*4);
+	    _level = c.getLevel()+(int)(Math.random()*4);
 	    _exp=_level*2;
 	    _accuracy=.90;
     }	   
