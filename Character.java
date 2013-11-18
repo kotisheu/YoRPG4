@@ -7,7 +7,7 @@ public abstract class Character{
     
 // Methods:
 		public boolean isAlive(){
-			return _hp > 0;
+			return (_hp > 0);
     }
     public int getDefense(){
 			return _defense;
