@@ -23,11 +23,9 @@ public class Cleric extends Character {
     	_mp += 35;
     }
 
-    public void heal() {
-			_strength = 10;
-			_defense = 10;
-			_attack = 0.15;
-			_hp = 75;
+    public void skill() {
+			_attack = 0.0;
+			_hp += 25;
 			_mp -= 25;
     }
 
