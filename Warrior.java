@@ -17,9 +17,12 @@ public class Warrior extends Character{
 		_name = s;
     	}	
 
-	public void levelUp() {
-    		_hp += 50;
-		 _mp += 5;
+	public void statsUp() {
+    		    _hp *= 1.2;
+    _mp *= 1.2;
+    _strength *= 1.2;
+    _defense *= 1.2;
+    _smarts *= 1.2;
   	}
   	
   	public String about() {
