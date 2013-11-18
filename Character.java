@@ -44,7 +44,7 @@ public abstract class Character{
     
     public abstract String getName();
     public abstract void normalize();//see below
-    public abstract void skill();// equivalant of specialize I guess, just more generalized Use *stat*+= x, so normalize can be *stat* -= x
+    public abstract void skill();// equivalent of specialize I guess, just more generalized Use *stat*+= x, so normalize can be *stat* -= x
     public abstract String about();
     public abstract void statsUp();//  make each stat like 1/5 th higher? 
 
