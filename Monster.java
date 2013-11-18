@@ -10,19 +10,19 @@ public class Monster extends Character {
 	    _strength = (int) (20 + (45 * Math.random()));
     }
 
- public abstract String getName(){
+ public String getName(){
  	return _name;
  }
-    public abstract void normalize(){
+    public void normalize(){
     }
     
-    public abstract void skill(){
+    public void skill(){
     	
     }
-    public abstract String about(){
+    public String about(){
     	return " The boss's little henchmen.";
     }
-    public abstract void statsUp(){
+    public void statsUp(){
     }
     
 }
