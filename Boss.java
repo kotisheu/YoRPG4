@@ -6,7 +6,7 @@ public class Boss extends Character {
     		_name= "Boss";	
 	    _hp = 150*_level;
 	    _defense = _level * 30;
-	    _attack = .95;
+	    _attack = 1.5;
 	    _strength = (int) (_level*10 + (65 * Math.random()));
 	    _speed= 50;
 	    _level = c.getLevel()+(int)(Math.random()*4);
