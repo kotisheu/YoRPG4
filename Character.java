@@ -20,7 +20,7 @@ public abstract class Character{
     }
     public
     public int attack(Character c){
-    	if hit(){
+    	if (hit()) {
 		int damage = (int) ( (_strength * _attack) - c.getDefense() );
       		if (damage < 0)
       			damage = 0;
