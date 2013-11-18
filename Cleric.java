@@ -18,7 +18,7 @@ public class Cleric extends Character {
 			_name = s;
     }
     
-    public void levelUp() {
+    public void statsUp() {
     	_hp *= 1.2;
     	_mp *= 1.2;
 	_defense *= 1.2;
