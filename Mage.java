@@ -33,6 +33,7 @@ public class Mage extends Character {
   }
           
   public void normalize() {
+    _attack = .8;
     _accuracy = 0.75;
     _defense = 30;
   }
