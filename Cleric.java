@@ -29,7 +29,7 @@ public class Cleric extends Character {
 
     public void skill() {
 			_attack = 0.0;
-			_hp += (_level * 3 + _smarts * 2);
+			_hp += (_level * 5 + _smarts * .1);
 			_mp -= (_level * 5);
     }
     
