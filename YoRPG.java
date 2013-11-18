@@ -61,7 +61,6 @@ public class YoRPG {
 	    name = in.readLine();
 	}
 	catch ( IOException e ) { }
-	
 	s = "Very well.\n";
 	s+= " Which class would you like to partake in?\n";
 	s+="\t1: A powerful warrior.\n";
@@ -75,19 +74,19 @@ public class YoRPG {
 	System.out.print( s );
         try {
 	    String c =in.readLine() ;
-	    if (c=="1"){
+	    if (c.equals("1")){
 		pat = new Warrior( name );}
-	    if (c=="2"){
+	    if (c.equals("2")){
 		pat = new Tank( name );}
-	    if (c=="3"){
+	    if (c.equals("3")){
 		pat = new Mage( name );}
-	    if (c=="4"){
+	    if (c.equals("4")){
 		pat = new Rogue( name );}
-	    if (c=="5"){
+	    if (c.equals("5")){
 		pat = new Archer( name );}
-	    if (c=="6"){
+	    if (c.equals("6")){
 		pat = new Pirate( name );}
-	    if (c=="7"){
+	    if (c.equals("7")){
 		pat = new Cleric( name );}
 	}
 	catch ( IOException e ) { }
@@ -111,10 +110,10 @@ public class YoRPG {
 		smaug = new Monster();}
 	    System.out.println( "Lo, yonder a level "+smaug.getLevel()+" monster approacheth!" );
 	    
-	    while( smaug.isAlive() && pat.isAlive() ) {
-		System.out.println( "Wtest?" );
-		int cspeed=pat.getSpeed();  
+	    while( smaug.isAlive() && pat.isAlive()  ) {	   
+		int cspeed=pat.getSpeed();              
 		int sspeed= smaug.getSpeed();
+
 		try {
 		    System.out.println( "Would you like to use a skill?" );
 		    System.out.println( "\t1: Nay.\n\t2: Aye!" );
@@ -124,7 +123,7 @@ public class YoRPG {
 
 		if ( i == 2 ){
 		    pat.skill();}
-		
+
 		while(( cspeed- 30) >=0){
 		     d1 = pat.attack( smaug );
 		    smaug.lowerHP(d1);
@@ -147,6 +146,7 @@ public class YoRPG {
 		    pat.lowerHP(d2);
 		    System.out.println( "Ye Olde Monster hit back for " + d2 +
 					" points of damage.");}
+		pat.normalize();
 		}//end while
 
 	    //option 1: you & the monster perish
@@ -197,4 +197,5 @@ public class YoRPG {
     }//end main
 
 }//end class YoRPG
+
 
