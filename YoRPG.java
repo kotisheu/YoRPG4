@@ -10,7 +10,7 @@ public class YoRPG {
 
     //each round, a Warrior and a Monster will be instantiated
     private Warrior pat;   //Is it man or woman?
-    private Monster1 smaug; //Friendly generic monster name, eh?
+    private Monster smaug; //Friendly generic monster name, eh?
 
     private int moveCount;
     private boolean gameOver;
