@@ -20,6 +20,10 @@ public class Cleric extends Character {
 			_name = s;
     }
     
+    public String getName() {
+    	return _name;
+  }
+    
     public void statsUp() {
     	_hp *= 1.2;
     	_mp *= 1.2;
