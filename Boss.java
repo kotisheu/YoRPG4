@@ -10,20 +10,20 @@ public class Boss extends Character {
 	    _strength = (int) (20 + (65 * Math.random()));
     }
 
-  public String getName();{
+  public String getName(){
   	return _name;
   }
-    public void normalize();{
+    public void normalize(){
     	
     }
-    public  void skill();{
+    public  void skill(){
     	
     }
-    public String about();{
+    public String about(){
     	return " The big and the bad Boss.";
     	
     }
-    public void statsUp();{
+    public void statsUp(){
     	
     }
 }
