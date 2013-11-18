@@ -105,9 +105,9 @@ public class YoRPG {
 
 	else {
 	    if (Math.random() >=.95){
-		smaug= new Boss();}
+		smaug= new Boss(pat);}
 	    else{
-		smaug = new Monster();}
+		smaug = new Monster(pat);}
 	    System.out.println( "Lo, yonder a level "+smaug.getLevel()+" monster approacheth!" );
 	    
 	    while( smaug.isAlive() && pat.isAlive()  ) {	   
