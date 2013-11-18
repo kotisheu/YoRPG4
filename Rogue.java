@@ -10,6 +10,8 @@ public class Rogue extends Character {
     _speed = 90;
     _smarts = 40;
     _accuracy = .85;
+    _level = 1;
+    _exp = 0;
   }
   
   public Rogue(String s) {
