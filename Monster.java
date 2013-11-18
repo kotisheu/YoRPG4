@@ -8,6 +8,7 @@ public class Monster extends Character {
 	    _defense = 20;
 	    _attack = 1;
 	    _strength = (int) (20 + (45 * Math.random()));
+	    _level = 1;
     }
 
  public String getName(){
