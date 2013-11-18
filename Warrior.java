@@ -10,6 +10,8 @@ public class Warrior extends Character{
 		_speed = 40;
 		_smarts = 20;
 		_accuracy = 0.7;
+		_level = 1;
+    		_exp = 0;
     	}
 
     	public Warrior(String s) {
