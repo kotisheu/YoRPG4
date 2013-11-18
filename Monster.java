@@ -20,7 +20,7 @@ public class Monster extends Character {
     	
     }
     public String about(){
-    	String desc = "The evil, hearthless beast causes destruction where it goes."
+    	String desc = "The evil, hearthless beast causes destruction where it goes.";
     	return desc;
     }
     
