@@ -26,6 +26,16 @@ public class Archer extends Character {
     _smarts *= 1.2;
   }
   
+  public void skill() {
+    _accuracy += (_level * .01);
+    _defense -= (_level * 3 + _smarts * .01);
+  }
+          
+  public void normalize() {
+    _accuracy = 0.95;
+    _defense = 40;
+  }
+  
   public string about() {
     String desc = "A lighthearted lad with 20/20 vision who can impale foes from faraway distances with his bow and arrows.";
     return desc;
