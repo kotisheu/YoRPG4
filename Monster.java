@@ -7,7 +7,7 @@ public class Monster extends Character {
 	    _attack = .5;
 	    _strength = (int) (_level + (45 * Math.random()));
 	    _speed=30;
-	    _level = c.getLevel + Math.random()*3;
+	    _level = c.getLevel() + (int)Math.random()*3;
 	    _exp= _level;
 	    _accuracy= .70;
     }
