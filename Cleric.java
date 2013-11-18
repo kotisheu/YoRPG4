@@ -29,8 +29,12 @@ public class Cleric extends Character {
 
     public void skill() {
 			_attack = 0.0;
-			_hp += 25;
-			_mp -= 25;
+			_hp += (_level * 3 + _smarts * 2);
+			_mp -= (_level * 5);
+    }
+    
+    public void normalize() {
+    	_attack = 0.2;
     }
 
 public String about() {
