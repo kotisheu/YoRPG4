@@ -41,7 +41,7 @@ public class Archer extends Character {
   }
   
   public String about() {
-    String desc = "A lighthearted lad with 20/20 vision who can impale foes from faraway distances with his bow and arrows.";
+    String desc = "A sharpshooter who can impale foes from faraway distances with his bow and arrows.";
     return desc;
   }
 }
