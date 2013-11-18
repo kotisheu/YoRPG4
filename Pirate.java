@@ -18,8 +18,11 @@ public class Pirate extends Character {
   }
   
   public void levelUp() {
-    _hp += 25;
-    _mp += 10;
+    _hp *= 1.2;
+    _mp *= 1.2;
+    _strength *= 1.2;
+    _defense *= 1.2;
+    _smarts *= 1.2;
   }
 
 }
