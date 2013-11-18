@@ -11,43 +11,41 @@ public abstract class Character{
     public int getDefense(){
 			return _defense;
     }
-    public int getAccuracy(){
-    	return _accuracy;
-    }
     public int lowerHP(int i){
 			_hp-=i;
 			return _hp;
     }
-    
-    public int attack(Character _character){
-	int damage = (int) ( (_strength * _attack) - _character.getDefense() );
-	int _dodge = (int) (100 * Math.random());		
-      if (damage < 0)
-      	damage = 0;
-      	if (_dodge > _character.getAccuracy)
-      		damage = 0;
-        _character.lowerHP(damage);
-	  	return damage;
+    public int getExp(){
+    	return _exp;
     }
-    //^dodge was put into the attack method cuz that's really the only easy way
+    public
+    public int attack(Character c){
+    	if hit(){
+		int damage = (int) ( (_strength * _attack) - c.getDefense() );
+      		if (damage < 0)
+      			damage = 0;
+		 _character.lowerHP(damage);
+	  		return damage;
+    	}return 0;
+    }
+    public void levelUp(){
+    	if (_exp == _level*10)){
+    		_level++;
+    		statsUp();}
+    		
+    	}
+    public boolean hit(){
+    	return (((int)(Math.random() * 100)) <= _accuracy)
+    }
+    public boolean expup(Character c){
+    	_exp += c.getExp(); //add monster exp to character exp
+    }
     
-    ~expup
     
     public abstract String getName();
-    public abstract void normalize();
-    public abstract void specialize(); //->skill?
-    
+    public abstract void normalize();//see below
+    public abstract void skill();// equivalant of specialize I guess, just more generalized Use *stat*+= x, so normalize can be *stat* -= x
     public abstract String about();
-	> Shouldn't about be abstract/for each class
-    public static String about() {
-	String desc = "";
-        desc += "Warrior: A fine soul that hath a sword to parry and slash with.";
-	desc += "\nMonster: An evil being drawn up from the Underworld, lurking in shadows and scaring the fair maids.";
-	desc += "\nRogue: A thief that swipes items from good, innocent victims to battle cleverly against the cruelty of reality.";
-	desc += "\nMage: A skilled magician that casts spells learned from the great world of Dumbledore.";
-	return desc;
-    }
-    
-    public abstract void levelUp();
+    public abstract void statsUp();//  make each stat like 1/5 th higher? 
 
 }
