@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.util.*;
 
@@ -91,7 +90,7 @@ public class YoRPG {
 	else {
 	    System.out.println( "Lo, yonder monster approacheth!" );
 
-	    smaug = new Monster();
+	    smaug = new Monster1();
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
