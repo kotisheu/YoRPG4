@@ -20,8 +20,10 @@ public class Monster extends Character {
     	
     }
     public String about(){
-    	return " The boss's little henchmen.";
+    	String desc = "The evil, hearthless beast causes destruction where it goes."
+    	return desc;
     }
+    
     public void statsUp(){
     }
     
