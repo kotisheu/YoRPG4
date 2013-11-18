@@ -35,7 +35,7 @@ public class Tank extends Character {
   public void skill() {
     _attack += (_level * .02 + _smarts * .01);
     _defense += (_level * 2 + _smarts * .01);
-    _accuracy -= (_level * .03 + _smarts * .01)
+    _accuracy -= (_level * .03 + _smarts * .01);
   }
           
   public void normalize() {
