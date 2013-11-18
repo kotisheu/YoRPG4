@@ -26,6 +26,16 @@ public class Rogue extends Character {
     _smarts *= 1.2;
   }
   
+  public void skill() {
+    _attack += (_smarts * .05);
+    _defense -= (_level * 3 + _smarts * .01);
+  }
+          
+  public void normalize() {
+    _attack = 0.35;
+    _defense = 50;
+  }
+  
   public String about() {
     String desc = "A theif who swipes items from good, innocent victims to battle against the cruelty of reality and monsters.";
     return desc;
