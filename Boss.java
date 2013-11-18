@@ -1,24 +1,29 @@
-public class Monster2 extends Character {
+public class Boss extends Character {
 
     private String _name;
 
-    public Monster2() {
+    public Boss() {
+    		_name= Boss;	
 	    _hp = 250;
 	    _defense = 15;
 	    _attack = 1.5;
 	    _strength = (int) (20 + (65 * Math.random()));
     }
 
-    public void specialize () {
-	    ;
+  public String getName();{
+  	return _name;
+  }
+    public void normalize();{
+    	
     }
-
-    public void normalize () {
-    	;
+    public  void skill();{
+    	
     }
-    
-    public void statsUp() {
-    	;
+    public String about();{
+    	return " The big and the bad Boss."
+    	
     }
-
+    public void statsUp();{
+    	
+    }
 }
