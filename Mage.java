@@ -43,7 +43,7 @@ public class Mage extends Character {
   }
   
   public String about() {
-    String desc = "A skilled magician that casts learned from the great realm of Hogwarts. Muggles and monsters, beware.";
+    String desc = "A skilled magician who casts spells learnt from the great realm of Hogwarts. Muggles and monsters, beware.";
     return desc;
   }
 
