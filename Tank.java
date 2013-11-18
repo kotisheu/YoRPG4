@@ -28,6 +28,18 @@ public class Tank extends Character {
     _smarts *= 1.2;
   }
   
+  public void skill() {
+    _attack += (_level * .02 + _smarts * .01);
+    _defense += (_level * 2 + _smarts * .01);
+    _accuracy -= (_level * .03 + _smarts * .01)
+  }
+          
+  public void normalize() {
+    _attack = 0.25;
+    _defense = 100;
+    _accuracy = .65;
+  }
+  
   public String about() {
     String desc = "A giant steel machine that lumbers through the world, righting evils with its cannon. Take heed.";
     return desc;
