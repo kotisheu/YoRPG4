@@ -5,7 +5,7 @@ public class Boss extends Character {
     public Boss() {
     		_name= "Boss";	
 	    _hp = 250;
-	    _defense = 15;
+	    _defense = 30;
 	    _attack = 1.5;
 	    _strength = (int) (20 + (65 * Math.random()));
     }
