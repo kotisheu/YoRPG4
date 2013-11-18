@@ -10,6 +10,8 @@ public class Archer extends Character {
     _speed = 90;
     _smarts = 60;
     _accuracy = .95;
+    _level = 1;
+    _exp = 0;
   }
   
   public Archer(String s) {
