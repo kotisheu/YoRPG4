@@ -19,6 +19,9 @@ public abstract class Character{
     public int getExp(){
     	return _exp;
     }
+    public int getLevel(){
+    	return _level;
+    }
     
     public int attack(Character c){
     	if (hit()) {
