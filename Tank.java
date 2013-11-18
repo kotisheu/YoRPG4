@@ -1,4 +1,4 @@
-// The mother of all subclasses is here.
+// The mother of all classes is here.
 
 public class Tank extends Character {
 
@@ -26,6 +26,11 @@ public class Tank extends Character {
     _mp *= 1.2;
     _defense *= 1.2;
     _smarts *= 1.2;
+  }
+  
+  public String about() {
+    String desc = "A giant steel machine that lumbers through the world, righting evils with its cannon. Take heed.";
+    return desc;
   }
 
 }
