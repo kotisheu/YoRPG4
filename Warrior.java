@@ -17,7 +17,11 @@ public class Warrior extends Character{
     	public Warrior(String s) {
 		this();
 		_name = s;
-    	}	
+    	}
+    	
+    	  public String getName() {
+    		return _name;
+	 }
 
 	public void statsUp() {
     		    _hp *= 1.2;
