@@ -40,7 +40,7 @@ public abstract class Character{
     }
     public int expup(Character c){
     	_exp += c.getExp();//add monster exp to character exp
-    	return c.getExp;
+    	return c.getExp();
     }
     
     
