@@ -10,6 +10,8 @@ public class Mage extends Character {
     _speed = 60;
     _smarts = 100;
     _accuracy = .75;
+    _level = 1;
+    _exp = 0;
   }
   
   public Mage(String s) {
