@@ -27,7 +27,7 @@ public class Archer extends Character {
   }
   
   public void skill() {
-    _accuracy += (_level * .01);
+    _accuracy += (_level * .01 + _smarts * .01);
     _defense -= (_level * 3 + _smarts * .01);
   }
           
