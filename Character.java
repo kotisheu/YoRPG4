@@ -37,7 +37,7 @@ public abstract class Character{
     	return 0;
     }
     public void levelUp(){
-    	if ((_exp>=((_level=1)*10))&&((_exp %(_level+1))>=0){
+    	if ((_exp>=((_level+1)*10)){
     		_level++;
     		statsUp();}
     		
