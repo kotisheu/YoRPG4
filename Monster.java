@@ -1,14 +1,15 @@
 public class Monster extends Character {
 
-    private String _name;
-
-    public Monster() {
+    public Monster(Character c) {
     		_name="minion";
-	    _hp = 150;
-	    _defense = 20;
-	    _attack = 1;
-	    _strength = (int) (20 + (45 * Math.random()));
-	    _level = 1;
+	    _hp = _level*50;
+	    _defense = _level*10;
+	    _attack = .5;
+	    _strength = (int) (_level + (45 * Math.random()));
+	    _speed=30;
+	    _level = c.getLevel + Math.random()*3;
+	    _exp= _level;
+	    _accuracy= .70;
     }
 
  public String getName(){
