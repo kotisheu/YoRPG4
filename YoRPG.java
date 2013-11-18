@@ -105,7 +105,7 @@ public class YoRPG {
 		catch ( IOException e ) { }
 
 		if ( i == 2 )
-		    pat.specialize();
+		    pat.skill();
 		else
 		    pat.normalize();
 
