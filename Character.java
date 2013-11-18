@@ -42,9 +42,9 @@ public abstract class Character{
     public static String about() {
 	String desc = "";
         desc += "Warrior: A fine soul that hath a sword to parry and slash with.";
-	desc += "/nMonster: An evil being drawn up from the Underworld, lurking in shadows and scaring the fair maids.";
-	desc += "/nRogue: A thief that swipes items from good, innocent victims to battle cleverly against the cruelty of reality.";
-	desc += "/nMage: A skilled magician that casts spells learned from the great world of Dumbledore.";
+	desc += "\nMonster: An evil being drawn up from the Underworld, lurking in shadows and scaring the fair maids.";
+	desc += "\nRogue: A thief that swipes items from good, innocent victims to battle cleverly against the cruelty of reality.";
+	desc += "\nMage: A skilled magician that casts spells learned from the great world of Dumbledore.";
 	return desc;
     }
     
