@@ -20,9 +20,10 @@ public class Boss extends Character {
     	
     }
     public String about(){
-    	return " The big and the bad Boss.";
-    	
+    	String desc = "The big, bad boss.";
+    	return desc;
     }
+    
     public void statsUp(){
     	
     }
