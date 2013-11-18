@@ -24,9 +24,10 @@ public abstract class Character{
 		int damage = (int) ( (_strength * _attack) - c.getDefense() );
       		if (damage < 0)
       			damage = 0;
-		 _character.lowerHP(damage);
+		 c.lowerHP(damage);
 	  		return damage;
-    	}return 0;
+    	}
+    	return 0;
     }
     public void levelUp(){
     	if (_exp == _level*10){
