@@ -26,6 +26,17 @@ public class Mage extends Character {
     _smarts *= 1.2;
   }
   
+  public void skill() {
+    _attack += (_level * .01 + _smarts * .007);
+    _accuracy += (_level * .01 + _smarts * .005);
+    _defense -= (_level * 3 + _smarts * .01);
+  }
+          
+  public void normalize() {
+    _accuracy = 0.75;
+    _defense = 30;
+  }
+  
   public String about() {
     String desc = "A skilled magician that casts learned from the great realm of Hogwarts. Muggles and monsters, beware.";
     return desc;
