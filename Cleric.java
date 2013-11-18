@@ -33,4 +33,9 @@ public class Cleric extends Character {
 			_mp -= 25;
     }
 
+public String about() {
+	String desc = "A priest who hath left the brotherhood to travel the world, healing himself as he sees fit on his journey.";
+	return desc;
+}
+
 }
