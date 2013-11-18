@@ -22,6 +22,9 @@ public abstract class Character{
     public int getLevel(){
     	return _level;
     }
+    public int getSpeed(){
+    	return _speed;
+    }
     
     public int attack(Character c){
     	if (hit()) {
