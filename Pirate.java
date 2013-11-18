@@ -10,6 +10,8 @@ public class Pirate extends Character {
     _speed = 80;
     _smarts = 50;
     _accuracy = .85;
+    _level = 1;
+    _exp = 0;
   }
   
   public Pirate(String s) {
