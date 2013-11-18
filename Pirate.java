@@ -25,5 +25,10 @@ public class Pirate extends Character {
     _defense *= 1.2;
     _smarts *= 1.2;
   }
+  
+  public String about() {
+    String desc = "A landlubber who sails the seas, shooting sea monsters with his gun in search of their booty.";
+    return desc;
+  }
 
 }
