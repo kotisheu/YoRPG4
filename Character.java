@@ -38,8 +38,9 @@ public abstract class Character{
     public boolean hit(){
     	return (Math.random() <= _accuracy);
     }
-    public boolean expup(Character c){
-    	_exp += c.getExp(); //add monster exp to character exp
+    public int expup(Character c){
+    	_exp += c.getExp();
+    	return _exp;//add monster exp to character exp
     }
     
     
