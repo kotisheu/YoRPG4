@@ -20,7 +20,7 @@ public class Boss extends Character {
     	
     }
     public String about();{
-    	return " The big and the bad Boss."
+    	return " The big and the bad Boss.";
     	
     }
     public void statsUp();{
