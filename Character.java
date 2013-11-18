@@ -3,7 +3,7 @@ public abstract class Character{
 // Attributes:
     protected int _hp, _mp, _strength, _defense, _speed, _smarts, _level, _exp;
     protected double _attack, _accuracy;
-
+    protected String _name;
 // Methods:
 		public boolean isAlive(){
 			return _hp > 0;
