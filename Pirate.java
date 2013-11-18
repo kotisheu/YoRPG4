@@ -26,6 +26,16 @@ public class Pirate extends Character {
     _smarts *= 1.2;
   }
   
+  public void skill() {
+    _attack += (_level * .01 + _smarts * .01);
+    _defense -= (_level * 3 + _smarts * .01);
+  }
+          
+  public void normalize() {
+    _attack = 0.4;
+    _defense = 40;
+  }
+  
   public String about() {
     String desc = "A landlubber who sails the seas, shooting sea monsters with his gun in search of their booty.";
     return desc;
