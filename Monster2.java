@@ -1,4 +1,4 @@
-public class Monster extends Character {
+public class Monster2 extends Character {
 
     private String _name;
 
