@@ -25,5 +25,10 @@ public class Mage extends Character {
     _defense *= 1.2;
     _smarts *= 1.2;
   }
+  
+  public String about() {
+    String desc = "A skilled magician that casts learned from the great realm of Hogwarts. Muggles and monsters, beware.";
+    return desc;
+  }
 
 }
