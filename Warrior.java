@@ -26,6 +26,16 @@ public class Warrior extends Character{
     _smarts *= 1.2;
   	}
   	
+  	public void skill() {
+  		_attack += (_level * .1 + _smarts * .05);
+  		_defense -= (_level * 3 + _smarts * .01);
+  	}
+  	
+  	public void normalize() {
+  		_attack = 0.6;
+  		_defense = 75;
+  	}
+  	
   	public String about() {
   		String desc = "A fine soul that hath a sword to slay and parry beasts that roam.";
   		return desc;
