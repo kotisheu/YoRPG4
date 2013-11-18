@@ -4,6 +4,7 @@ public abstract class Character{
     protected int _hp, _mp, _strength, _defense, _speed, _smarts, _level, _exp;
     protected double _attack, _accuracy;
     protected String _name;
+    
 // Methods:
 		public boolean isAlive(){
 			return _hp > 0;
@@ -48,6 +49,6 @@ public abstract class Character{
     public abstract void normalize();//see below
     public abstract void skill();// equivalent of specialize I guess, just more generalized Use *stat*+= x, so normalize can be *stat* -= x
     public abstract String about();
-    public abstract void statsUp();//  make each stat like 1/5 th higher? 
+    public abstract void statsUp();//  makes certain stats 1/5 th higher upon level up
 
 }
