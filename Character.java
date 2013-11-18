@@ -9,6 +9,8 @@ public abstract class Character{
     protected int _speed;
     protected int _smarts;
     protected double _accuracy;
+    protected int _level;
+    protected int _exp;
 
 // Methods:
 		public boolean isAlive(){
@@ -29,7 +31,7 @@ public abstract class Character{
         _character.lowerHP(damage);
 	  	return damage;
     }
-    ~dodge
+    
     ~expup
     
     public abstract String getName();
