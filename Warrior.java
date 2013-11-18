@@ -41,7 +41,7 @@ public class Warrior extends Character{
   	}
   	
   	public String about() {
-  		String desc = "A fine soul that hath a sword to slay and parry beasts that roam.";
+  		String desc = "A noble soul that hath a sword to slay and parry beasts that roam.";
   		return desc;
   	}
  
