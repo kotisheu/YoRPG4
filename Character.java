@@ -39,8 +39,8 @@ public abstract class Character{
     	return (Math.random() <= _accuracy);
     }
     public int expup(Character c){
-    	_exp += c.getExp();
-    	return _exp;//add monster exp to character exp
+    	_exp += c.getExp();//add monster exp to character exp
+    	return c.getExp;
     }
     
     
