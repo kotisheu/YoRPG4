@@ -11,6 +11,8 @@ public class Cleric extends Character {
 			_speed = 40;
 			_smarts = 100;
 			_accuracy = .8;
+			 _level = 1;
+			 _exp = 0;		
     }
 
     public Cleric(String s) {
