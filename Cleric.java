@@ -19,8 +19,11 @@ public class Cleric extends Character {
     }
     
     public void levelUp() {
-    	_hp += 15;
-    	_mp += 35;
+    	_hp *= 1.2;
+    	_mp *= 1.2;
+    	_strength *= 1.2;
+    	_defense *= 1.2;
+    	_smarts *= 1.2;
     }
 
     public void skill() {
