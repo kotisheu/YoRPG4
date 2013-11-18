@@ -1,16 +1,8 @@
 public abstract class Character{
 
 // Attributes:
-    protected int _hp; 
-    protected int _mp; 
-    protected int _strength;
-    protected int _defense;
-    protected double _attack;
-    protected int _speed;
-    protected int _smarts;
-    protected double _accuracy;
-    protected int _level;
-    protected int _exp;
+    protected int _hp, _mp, _strength, _defense, _speed, _smarts, _level, _exp;
+    protected double _attack, _accuracy;
 
 // Methods:
 		public boolean isAlive(){
@@ -19,24 +11,31 @@ public abstract class Character{
     public int getDefense(){
 			return _defense;
     }
+    public int getAccuracy(){
+    	return _accuracy;
+    }
     public int lowerHP(int i){
 			_hp-=i;
 			return _hp;
     }
     
     public int attack(Character _character){
-			int damage = (int) ( (_strength * _attack) - _character.getDefense() );
+	int damage = (int) ( (_strength * _attack) - _character.getDefense() );
+	int _dodge = (int) (100 * Math.random());		
       if (damage < 0)
       	damage = 0;
+      	if (_dodge > _character.getAccuracy)
+      		damage = 0;
         _character.lowerHP(damage);
 	  	return damage;
     }
+    //^dodge was put into the attack method cuz that's really the only easy way
     
     ~expup
     
     public abstract String getName();
     public abstract void normalize();
-    public abstract void specialize();->skill?
+    public abstract void specialize(); //->skill?
     
     public abstract String about();
 	> Shouldn't about be abstract/for each class
