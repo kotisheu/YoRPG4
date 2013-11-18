@@ -12,6 +12,8 @@ public class Tank extends Character {
     _speed = 30;
     _smarts = 20;
     _accuracy = .65;
+    _level = 1;
+    _exp = 0;
   }
   
   public Tank(String s) {
