@@ -41,7 +41,7 @@ public class Pirate extends Character {
   }
   
   public String about() {
-    String desc = "A landlubber who sails the seas, shooting sea monsters with his gun in search of their booty.";
+    String desc = "A landlubber who sails the seas, shooting sea monsters with his gun in search of treasure.";
     return desc;
   }
 
