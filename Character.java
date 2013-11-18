@@ -29,13 +29,13 @@ public abstract class Character{
     	}return 0;
     }
     public void levelUp(){
-    	if (_exp == _level*10)){
+    	if (_exp == _level*10){
     		_level++;
     		statsUp();}
     		
     	}
     public boolean hit(){
-    	return (((int)(Math.random() * 100)) <= _accuracy)
+    	return (((int)(Math.random() * 100)) <= _accuracy);
     }
     public boolean expup(Character c){
     	_exp += c.getExp(); //add monster exp to character exp
