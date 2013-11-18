@@ -14,9 +14,7 @@ public class Boss extends Character {
 	    _accuracy=.90;
     }	   
 
- public String getName(){
- 	return _name;
- }
+
   public String getName(){
   	return _name;
   }
