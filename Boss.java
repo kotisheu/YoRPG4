@@ -6,7 +6,7 @@ public class Monster2 extends Character {
 	    _hp = 250;
 	    _defense = 15;
 	    _attack = 1.5;
-	    _strength = (int) (15 + (40 * Math.random()));
+	    _strength = (int) (20 + (65 * Math.random()));
     }
 
     public void specialize () {
@@ -14,6 +14,10 @@ public class Monster2 extends Character {
     }
 
     public void normalize () {
+    	;
+    }
+    
+    public void statsUp() {
     	;
     }
 
