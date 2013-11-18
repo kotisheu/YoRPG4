@@ -61,6 +61,7 @@ public class YoRPG {
 	    name = in.readLine();
 	}
 	catch ( IOException e ) { }
+	
 	s = "Very well.\n";
 	s+= " Which class would you like to partake in?\n";
 	s+="\t1: A powerful warrior.\n";
