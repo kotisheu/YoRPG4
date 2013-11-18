@@ -4,10 +4,10 @@ public class Boss extends Character {
 
     public Boss(Character c) {
     		_name= "Boss";	
-	    _hp = 75*_level;
-	    _defense = _level * 15;
+	    _hp = 150*_level;
+	    _defense = _level * 30;
 	    _attack = .95;
-	    _strength = (int) (_level + (65 * Math.random()));
+	    _strength = (int) (_level*10 + (65 * Math.random()));
 	    _speed= 50;
 	    _level = c.getLevel()+(int)(Math.random()*4);
 	    _exp=_level*2;
