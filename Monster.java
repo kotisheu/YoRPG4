@@ -1,8 +1,8 @@
-public class Monster1 extends Character {
+public class Monster extends Character {
 
     private String _name;
 
-    public Monster1() {
+    public Monster() {
 	    _hp = 150;
 	    _defense = 20;
 	    _attack = 1;
@@ -14,6 +14,10 @@ public class Monster1 extends Character {
     }
 
     public void normalize() {
+    	;
+    }
+    
+    public void statsUp() {
     	;
     }
 
