@@ -2,12 +2,12 @@ public class Monster extends Character {
 
     public Monster(Character c) {
     		_name="minion";
-	    _hp = _level*50;
-	    _defense = _level*10;
-	    _attack = .5;
-	    _strength = (int) (_level + (45 * Math.random()));
+	    _hp = _level*100;
+	    _defense = _level*20;
+	    _attack = 1;
+	    _strength = (int) (_level*5 + (45 * Math.random()));
 	    _speed=30;
-	    _level = c.getLevel() + (int)Math.random()*3;
+	    _level = c.getLevel() + (int)(Math.random()*3);
 	    _exp= _level;
 	    _accuracy= .70;
     }
